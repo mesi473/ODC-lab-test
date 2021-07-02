@@ -2,13 +2,15 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './style.css';
 import Header from './Header';
-import '../App.css'
+import '../App.css';
+import LoginInputHandler from './LoginInputHandler';
 
 
 export default function Login() {
     const [state,setState]=React.useState({
         username:'',
-        password:''
+        password:'',
+        userType:'admin',
     })
     return (
         <div>
@@ -17,10 +19,11 @@ export default function Login() {
                 <div className="login-area">
                     <div className="log">
                         <h1>login</h1>
-                        <select>
-                            <option>Admin</option>
-                            <option>Customer</option>
-                            <option>Expert</option>
+                        <select value={state.userType}>
+                            <option disabled>Login as</option>
+                            <option value="admin">Admin</option>
+                            <option value="customer">Customer</option>
+                            <option value="expert">Expert</option>
                         </select>
                         <input
                         onChange={(e)=>{
@@ -32,7 +35,7 @@ export default function Login() {
                         }} 
                         value={state.password} type="password" name="password" placeholder="password" required="required"/>
                         <Link  to="/admin/dashboard" onClick={()=>{
-                            
+                            LoginInputHandler(state);
                         }}>Login</Link>
                     </div>
                 </div>

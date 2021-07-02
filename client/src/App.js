@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <Route path="/" exact component={Login}></Route>
       <Route path="/register/customer" component={Customer}></Route>
-      <Route path="/register/customer" component={Experts}></Route>
-      <Route path="/register/customer" component={Admin}></Route>
+      <Route path="/register/expert" component={Experts}></Route>
+      <Route path="/register/admin" component={Admin}></Route>
       
     </BrowserRouter>
   );

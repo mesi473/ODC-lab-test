@@ -4,10 +4,11 @@ import {Link} from 'react-router-dom';
 import PhoneInput from 'react-phone-number-input';
 
 
-export default function Customer() {
+export default function Admin() {
     const [value, setValue] = useState()
     const [state,setState]=React.useState({
         email:'',
+        password:'',
         lastName:'',
         FirstName:'',
         PhoneNumber:value,
@@ -16,6 +17,7 @@ export default function Customer() {
         password:'',
         conpassword:'',
         country:'',
+        levelOfStudy:'',
     })
     
     function selectCountry (val) {
@@ -51,8 +53,7 @@ export default function Customer() {
                             
                         </div>
                         <div style={{display:"flex",flexDirection:'column'}}>
-                            
-                                <div style={{display:'flex',flexDirection:'row'}}>
+                             <div style={{width:'100%',height:'100%'}}>
                                 <PhoneInput
                                 
                                 international
@@ -82,7 +83,7 @@ export default function Customer() {
                             />
                         </div>
                         <div>
-                            <input
+                                <input
                                 onChange={(e)=>{
                                     setState({...state,City:e.target.value})
                                 }} 
@@ -97,7 +98,7 @@ export default function Customer() {
                                     setState({...state,conpassword:e.target.value})
                                 }} 
                                 value={state.conpassword} type="password" name="confirm password" placeholder="confirm password"/>
-                            
+                                
                         </div>
                     </div>
                     <div style={{display:"flex",flexDirection:'column'}}>

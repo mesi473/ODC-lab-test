@@ -3,6 +3,7 @@ import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-countr
 import {Link} from 'react-router-dom';
 import PhoneInput from 'react-phone-number-input';
 import Header from './Header';
+import RegisterInputHandler from './RegisterInputHandler';
 
 
 export default function Customer() {
@@ -110,7 +111,7 @@ export default function Customer() {
                     </div>
                     <div style={{display:"flex",flexDirection:'column'}}>
                         <button onClick={()=>{
-                            
+                           RegisterInputHandler(state);
                         }}><Link to="/register">Register</Link></button>
                     </div>
                 </div>
