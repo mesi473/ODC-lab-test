@@ -42,9 +42,20 @@ export default function Header() {
                 
                 <div className="nav-item">
                     <ul>
-                        <li><NavLink to="/">
+                        <li>
+                        <div className="tooltip">
+                        <NavLink to="/">
                             Register
-                        </NavLink></li>
+                        </NavLink>
+                            <div className="tooltiptext">
+                                <ul>
+                                    <li className="horzline"></li>
+                                    <li><NavLink  to="/register/customer">Customer</NavLink></li>
+                                    <li><NavLink to="/register/admin">Admin</NavLink></li>
+                                    <li><NavLink to="/register/experts">Experts</NavLink></li>
+                                </ul>
+                            </div>
+                        </div></li>
                         <li><NavLink to="/About">Login</NavLink></li>
                         <li><NavLink to="/Contact">Contact</NavLink></li>
                     </ul>

@@ -89,49 +89,7 @@ body::-webkit-scrollbar{
   flex-direction: row;
   margin-right: 40px;
 }
-.search-input input[type="text"]{
-  border: 0;
-  background: none;
-  display: black;
-  margin:20px auto;
-  text-align: center;
-  border: 1px solid #5C7795;
-  padding: 14px 40px;
-  outline: none;
-  color: black;
-  border-radius: 60px;
-  transition: 0.25s;
-}
-.search-input input[type="text"]:focus{
-  border-color:#5C7795;
-}
-.search-input button{
-  margin:20px auto;
-  padding: 10px 10px;
-  margin-left: -45px;
-  border-radius: 60px;
-  background-color: #5C7795;
-  border: none;
-  cursor: pointer;
-}
-.search-input.sticky-search input[type="text"]{
-  color: #f4f4f4;
-  border-color: #f4f4f4;;
-}
-.sign-in-btn1{
-  border: 1px solid #5C7795;
-  border-radius: 30px;
-  border-radius: 60px;
-  align-items: center;
-  text-align: center;
-  padding: 5px 40px;
-  margin: 5px;
-  margin-left: auto;
-  cursor: pointer;
-}
-.sign-in-btn.sticky{
-  display: flex;
-}
+
 .cart-btn{
   padding: 10px 10px;
   border-radius: 60px;
@@ -141,20 +99,6 @@ body::-webkit-scrollbar{
   text-align: center;
   margin-right: 40px;
   cursor: pointer;
-}
-.cart-btn:hover{
-  background:linear-gradient(to right,rgb(236, 213, 77),rgb(80, 140, 230))
-}
-.sign-in-btn{
-  border: 1px solid #5C7795;
-  border-radius: 30px;
-  border-radius: 60px;
-  align-items: center;
-  text-align: center;
-  padding: 15px 40px;
-  margin-right: auto;
-  display: none;
-  transition: 0.5s;
 }
 .flag{
   display: flex;
@@ -171,183 +115,8 @@ body::-webkit-scrollbar{
   justify-content: space-between;
 }
 
-  /* product */
-
-.products{
-  display: flex;
-  flex-direction: column;
-}
-.products-item-section{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
-  margin: 100px;
-}
-.product-item{
-  width: 300px;
-  height: 450px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.06);
-  border-radius: 10px;
-  transition: 1s;
-}
-.product-item:hover{
-  transform: scale(1.1);
-}
-.section-title{
-  border: 3px solid #5C7795;
-}
-.product-type{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.type{
-  margin: 10px;
-  cursor: pointer;
-}
-.type:hover{
-  border-bottom: 3px solid #5C7795;
-}
-.product-item img{
-  width: 60%;
-  height: 30%;
-  padding-left: 20%;
-  transition: 1s;
-}
-.product-item:hover img{
-  transform: scale(0.9);
-}
-.section-name{
-  background: #ffffff;
-  margin-top: 140px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #5C7795;
-}
 
 
-/* product with catagory */
-.letest-product{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.catagories{
-  color:#5C7795;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.catagories-list-product{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-}
-.catagories-list{
-  width: 300px;
-  height: 400px;
-  margin: 40px;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.06);
-  transition: 1s;
-}
-.catagories-list:hover{
-  transform: scale(1.1);
-}
-.c0{}
-.c1{
-  margin-top: 150px;
-}
-.c2{
-  margin-top: 260px;
-}
-.c3{
-  margin-top: 260px
-}
-.c4{
-  margin-top: 150px;
-}
-.c5{}
-.catagories-img{
-  width: 100%;
-  height: 95%;
-}
-.catagories-img img{
-  width: 60%;
-  height: 80%;
-  margin-left: 20%;
-}
-.footer-section{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.footer-section-item{
-  margin: 50px;
-}
-.footer{
-  width: 100%;
-  height: 400px;
-  background-color: #5C7795;
-  color: #eeeeee;
-}
-.copy-right p{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.rate{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.product-discription{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.description{
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 200px;
-}
-.description img{
-  width: 200px;
-  height: 120%;
-}
-.news-subscribe{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 100px;
-}
-.description1{
-  width: 80%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #e6f542;
-  margin: 140px;
-}
-.description1 img{
-  width: 50%;
-  height: 160%;
-  margin-top: -15%;
-}
 
 /* tool tip */
 
@@ -397,34 +166,7 @@ body::-webkit-scrollbar{
 }
 
 
-/* selected items css  cart*/
-.cartItem {
-  width: 100%;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
-  gap: 8px;
-  background: #fff;
-  border-radius: 100px;
-  place-items: center;
-  margin-bottom: 8px;
-  margin-top: 10px;
-}
-.cartItem a{
-  /* padding-right: 20px;
-  padding-left: 20px;
-  border-right: 1px solid #5C7795;
-  border-left: 1px solid #5C7795; */
-}
 
-.cartItem__name {
-  text-decoration: none;
-  color: #171717;
-}
-
-.cartItem__name:hover {
-  color: #dd219e;
-} 
 
 td select{
   display: flex;
@@ -432,115 +174,7 @@ td select{
   justify-content: center;
 }
 
-.cartItem__deleteBtn {
-  padding: 10px 17px;
-  /* color: red;
-  background: #f4f4f4;
-  border: 1px solid #171717; */
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.cartItem__image{
-  /* padding-right: 20px;
-  border-right: 1px solid #5C7795; */
-}
-.cartItem__deleteBtn:hover,
-.carItem__deleteBtn:active,
-.carItem__deleteBtn:focus{
-  /* background: #171717;
-  transform: scale(1.2); */
-}
 
-  @media (max-width: 700px) {
-  .cartItem__name {
-    font-size: 0.8rem;
-  }
-
-  .cartItem__select,
-  .cartItem__deleteBtn {
-    padding: 8px 13px;
-  }
-
-  .cartitem__price {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .cartItem__name {
-    font-size: 0.6rem;
-  }
-
-  .cartItem__select,
-  .cartItem__deleteBtn {
-    padding: 5px 8px;
-  }
-
-  .cartitem__price {
-    font-size: 0.6rem;
-  }
-}
-
-/* cart screen
- */
-
-.cartscreen {
-  display: flex;
-  max-width: 1300px;
-  margin-top: 150px;
-}
-
-.cartscreen h2 {
-  margin-bottom: 1rem;
-}
-
-.cartscreen__left {
-  flex: 0.7;
-  margin-right: 1rem;
-  background: transparent;
-  padding: 1rem;
-}
-
-.cartscreen__right {
-  flex: 0.3;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-  height: fit-content;
-  margin-top: 100px;
-  margin-left: 40px;
-  border-radius: 30px;
-}
-
-
-.cartscreen__right div {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-}
-
-.cartscreen__info p {
-  padding: 8px;
-}
-
-.cartscreen__info p:first-child {
-  font-weight: bold;
-}
-
-.cartscreen__right div:last-child {
-  border: none;
-}
-
-.cartscreen__right div button {
-  padding: 10px 17px;
-  width: 100%;
-  background: #171717;
-  color: #f4f4f4;
-  border: 1px solid #171717;
-  cursor: pointer;
-}
-
-.cartscreen__right div button:hover {
-  opacity: 0.9;
-}
 
 @media (max-width: 1320px) {
   .cartscreen {
@@ -731,8 +365,8 @@ tr td:last-child{
 
 
 
-/* buyer information */
-.buyer-info{
+/* register information */
+.register-info{
   position: relative;
   box-shadow: 1px 1px 5px  rgba(0,0,0,0.3);
   background: #ffffff;
@@ -746,7 +380,7 @@ tr td:last-child{
   margin-right: 50px;
   margin-bottom: 50px;
 }
-.buyer-info button{
+.register-info button{
   border: 0;
   background: none;
   display: block;
@@ -772,8 +406,8 @@ tr td:last-child{
   width: 500px;
   
 }
-.buyer-info select,
-.buyer-info input{
+.register-info select,
+.register-info input{
   border: 0;
   background: none;
   display: black;
@@ -786,7 +420,7 @@ tr td:last-child{
   border-radius: 60px;
   transition: 0.25s;
 }
-.buyer-info h1{
+.register-info h1{
   color: black;
     text-transform:uppercase;
     font-weight: 500;
@@ -796,7 +430,7 @@ tr td:last-child{
   width: 400px;
   height: 500px;
 }
-.buyer-info-area{
+.register-info-area{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
