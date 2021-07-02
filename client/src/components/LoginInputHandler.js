@@ -1,4 +1,5 @@
-function RegisterInputHandler(input){
+export default function RegisterInputHandler(input){
+    console.log(input);
     const email=input.email;
     const password=input.password;
     const defaultValue={
